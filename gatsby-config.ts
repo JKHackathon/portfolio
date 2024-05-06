@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby"
+import "./src/styles/index.css"
 
 const config: GatsbyConfig = {
   pathPrefix: "portfolio",
