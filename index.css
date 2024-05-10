@@ -1,0 +1,122 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+
+#navigation-bar {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  color: white;
+  height: 9vh;
+  align-items: center;
+}
+
+#navigation-bar a {
+  text-decoration: none;
+}
+
+nav {
+  color: white;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+.navigation-text {
+  margin-right: 20px;
+}
+
+.navigation-text:hover {
+  color: #36ffff;
+}
+
+.section {
+  /* min-height: 200px; */
+  height: 95vh;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+#title {
+  background-color: black;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 5vw;
+  font-weight: 900;
+}
+
+#title-text {
+  align-items: center;
+  max-width: 45vw;
+}
+
+#about-me {
+  background-color: white;
+  color: black;
+}
+
+#projects {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: block;
+  padding-top: 8vh;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.project {
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  transition: clip-path 0.5s;
+  /* object-position: top;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: width ease-in-out 0.5s; */
+}
+.project-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-img:hover {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+#contact-me {
+  display: block;
+  height: 25vh;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-container img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
