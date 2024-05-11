@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+</html>
+<body>
+  <!-- <div id="navigation-bar">
+    <a href="#projects"><nav class="navigation-text">Projects</nav></a>
+    <a href="#"><nav class="navigation-text">Resume</nav></a>
+  </div> -->
+  <div class="section">
+    <div class="scroll-items">
+      <h1>Responsive Redesign</h1>
+      <p>
+        How many times have you looked at a webpage and felt aghast at the
+        confusing user interface? Have you ever thought about how bad the
+        accessibility of a webpage might be? Maybe you’ve pulled up a webpage on
+        your phone and discovered that half the page is cut off and the buttons
+        are in the wrong place. Well lucky for you, responsive redesign is meant
+        to address all these concerns!
+      </p>
+    </div>
+  </div>
+  <div class="section" style="min-height: 550px">
+    <div class="scroll-items">
+      <h2>In Search of Trouble</h2>
+      <p>
+        When redesigning a webpage, we must first find a webpage that needs a
+        redesign. So I scoured the internet for an interesting website and
+        stumbled upon this article on penguins on a scientific blog:
+      </p>
+    </div>
+    <div class="scroll-item">
+      <img
+        src="assets/original-website.png"
+        style="max-height: 45vh; max-width: 80vw"
+      />
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        This article is not responsive at all, like many other older scientific
+        blogs. It is a cute little website, but it has not been updated since
+        2015 and is lacking in many ways. But first, let’s talk about what we
+        like. All the text has a high enough contrast to be legible, the
+        grouping on the page is pretty clear, and the layout generally guides
+        your eyes towards the important information.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        Now for what we can improve. The title of the article reads almost like
+        normal text as it is just slightly larger, while the subheaders are at
+        least bolded, though the size should clearly separate them as well.
+        There is also little distinction between the image captions and the main
+        body. Strangely, despite the font choice being legible, the actual
+        readability is not great, perhaps due to its light weight. Since
+        grouping is primarily established through borders and dividers, the
+        website feels a little old.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        There are also some problems that are less apparent. A number of images
+        are missing alternative text, which allows for screen readers to
+        describe what an image looks like. The links on the sidebar, such as in
+        the “Watch Video” category, are also confusing for screen readers as the
+        image and text are linked separately, resulting in difficulty navigating
+        and understanding the structure of the webpage. Links in the sidebar
+        also are not obviously clickable as there is no hover effect. Contrast
+        in the navigation bar is also extremely low, making it difficult for
+        even average users.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        And of course, the biggest issue: the webpage is completely
+        unresponsive. This means that if you resize your window or use a
+        different device, information will be cut off.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-items">
+      <h2>Visual Redesign</h2>
+      <p>
+        Whenever coming up with a design, I always start with some simple
+        sketches to visualize how changes might look. After settling on a more
+        tame sketch, I created a rudimentary wireframe for different devices
+        that addressed most of the little issues we noticed. I made changes like
+        removing borders between groups, italicizing captions, enlarging and
+        bolding headers, creating cards to hold images and text for the sidebar
+        links.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        Sidebars are always a bit of a challenge when it comes to mobile
+        devices, as there are a lot of different options. I opted to move all
+        the sidebar content below the main article as I felt this matched a lot
+        of well-known existing designs. Ultimately, I wanted to maintain the
+        general style of the original webpage as it has a little charm to it,
+        but it needed to feel a little more modern and also have a more clear
+        and consistent layout.
+      </p>
+    </div>
+  </div>
+  <div class="section" style="min-height: 600px">
+    <div class="scroll-item">
+      <div id="img-container">
+        <img id="img-sketch" src="assets/Final-Sketch.png" />
+        <img id="img-lofi" src="assets/RR-Lofi-Desktop.png" />
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        Once I felt decently satisfied, I moved to a high-fidelity mockup, which
+        would appear more like the finished product with all the colors and
+        styling and logos added in, while still allowing for changes to be
+        quickly made. I created a color palette based on the colors of a
+        penguin, using a very dark blue for the main text and adding a couple of
+        accent colors lacking in the original website, in order to more clearly
+        highlight text. With this color palette and some new fonts in hand, I
+        was ready.
+      </p>
+    </div>
+  </div>
+  <div class="section" style="min-height: 450px;">
+    <div class="scroll-item">
+      <h2>Results!</h2>
+      <img src="assets/results.png" style="max-height: 45vh; max-width: 80vw" />
+    </div>
+  </div>
+  <!-- <div class="section">
+    <div class="scroll-item">
+      <p></p>
+    </div>
+  </div> -->
+  <script src="script.js"></script>
+</body>

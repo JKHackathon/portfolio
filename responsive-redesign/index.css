@@ -1,0 +1,92 @@
+body {
+  /* margin: 0; */
+  /* padding: 0; */
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.section {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+/* .with-img {
+  display: inherit;
+  flex-direction: row;
+} */
+
+.section:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+
+p {
+  width: 430px;
+  font-size: large;
+}
+
+/* .container {
+  height: 200vh;
+}
+
+.content {
+  margin-bottom: 100vh;
+} */
+
+.scroll-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.scroll-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* img {
+  max-height: 45vh;
+  max-width: 80vw;
+} */
+
+#img-container {
+  min-height: 400px;
+  max-height: 60vh;
+  width: 80vw;
+  overflow: hidden;
+}
+
+#img-container:hover #img-sketch {
+  /* width: 0%; */
+  clip-path: polygon(0 0%, 0% 0%, 0% 100%, 0 100%);
+}
+#img-container:hover #img-lofi {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+
+#img-lofi {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  /* transition: width 0.5s; */
+  transition: clip-path 0.7s;
+}
+
+#img-sketch {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  /* transition: width 0.5s; */
+  transition: clip-path 0.7s;
+}
