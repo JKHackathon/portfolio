@@ -16,7 +16,7 @@ html {
   color: white;
   height: 9vh;
   align-items: center;
-  z-index: 10;
+  z-index: 1000;
 }
 
 #navigation-bar a {
