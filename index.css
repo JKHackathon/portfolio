@@ -162,8 +162,8 @@ a {
 }
 
 #contact-container img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   object-fit: cover;
   border-radius: 50%;
   margin-left: 5vw;
