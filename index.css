@@ -39,7 +39,17 @@ nav {
 
 .navigation-text:hover {
   /* color: #36ffff; */
-  background: linear-gradient(to right, #23b9ff, #46ff58);
+  background: linear-gradient(
+    90deg,
+    #23b9ff,
+    #00c8ff,
+    #00d5ff,
+    #00e1f7,
+    #00ecdd,
+    #00f4b9,
+    #00fb8d,
+    #46ff58
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,7 +124,17 @@ h3 {
 
 .project:hover h3 {
   /* color: #36ffff; */
-  background: linear-gradient(to right, #23b9ff, #46ff58);
+  background: linear-gradient(
+    90deg,
+    #23b9ff,
+    #00c8ff,
+    #00d5ff,
+    #00e1f7,
+    #00ecdd,
+    #00f4b9,
+    #00fb8d,
+    #46ff58
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -165,7 +185,17 @@ a {
 
 #contact-container a:hover {
   /* color: #36ffff; */
-  background: linear-gradient(to right, #23b9ff, #46ff58);
+  background: linear-gradient(
+    90deg,
+    #23b9ff,
+    #00c8ff,
+    #00d5ff,
+    #00e1f7,
+    #00ecdd,
+    #00f4b9,
+    #00fb8d,
+    #46ff58
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -184,4 +214,17 @@ a {
   /* display: flex;
   flex-direction: column; */
   text-align: center;
+}
+
+.circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  /* background-color: black; */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+  transition: opacity 0.4s;
 }
