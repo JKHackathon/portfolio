@@ -3,18 +3,21 @@ function isInViewport(element) {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <=
-      (windo.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom - 200 <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 
 function handleScroll() {
-  const scrollItem = document.querySelector(".project");
-  if (isInViewport(scrollItem)) {
-    scrollItem.classList.add("active");
-    window.removeEventListener("scroll", handleScroll);
-  }
+  const scrollItems = document.querySelectorAll(".scroll-item");
+  scrollItems.forEach((scrollItem) => {
+    if (isInViewport(scrollItem)) {
+      scrollItem.classList.add("active");
+      console.log(scrollItem);
+      //   window.removeEventListener("scroll", handleScroll);
+    }
+  });
 }
 
 window.addEventListener("scroll", handleScroll);

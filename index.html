@@ -22,16 +22,25 @@
     <a href="#projects"><nav class="navigation-text">Projects</nav></a>
     <a href="assets/CS Resume.pdf"><nav class="navigation-text">Resume</nav></a>
   </div>
-  <div class="section" id="title">
+  <div class="section" id="title" style="height: 95vh">
     <div id="title-text">
       <h1 style="margin-bottom: 0">JOEL KIM</h1>
       <h4 style="margin-top: 0; margin-left: 12%">
-        I am a <span style="color: #36ffff">front-end software engineer</span>.
+        I am a
+        <span
+          style="
+            background: linear-gradient(to right, #23b9ff, #46ff58);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+          >front-end software engineer</span
+        >.
       </h4>
     </div>
     <img
       src="assets/me.jpg"
-      style="border-radius: 15px; max-width: 300px; margin-right: 5vw;"
+      style="border-radius: 15px; max-width: 300px; margin-right: 5vw"
       alt="Photo of Joel Kim"
     />
   </div>
@@ -39,10 +48,12 @@
     <h1>About Me</h1>
   </div> -->
   <div class="section" id="projects">
-    <h1>My Projects</h1>
+    <div class="scroll-item">
+      <h1>My Projects</h1>
+    </div>
     <div id="project-gallery">
-      <a href="https://jkhackathon.github.io/portfolio/responsive-redesign/"
-        ><div class="project">
+      <div class="project scroll-item">
+        <a href="https://jkhackathon.github.io/portfolio/responsive-redesign/">
           <h3>Responsive Redesign</h3>
           <div class="project-container">
             <p class="project-desc">
@@ -56,10 +67,11 @@
               alt="redesigned website preview"
             />
           </div>
-        </div>
-      </a>
-      <a href="https://jkhackathon.github.io/portfolio/iterative-design"
-        ><div class="project">
+        </a>
+      </div>
+      <!-- </a> -->
+      <div class="project scroll-item">
+        <a href="https://jkhackathon.github.io/portfolio/iterative-design">
           <h3>Iterative Design</h3>
           <div class="project-container">
             <p class="project-desc">
@@ -74,10 +86,10 @@
               alt="Warp terminal application prototype frame"
             />
           </div>
-        </div>
-      </a>
-      <a href="https://jkhackathon.github.io/portfolio/development"
-        ><div class="project">
+        </a>
+      </div>
+      <div class="project scroll-item">
+        <a href="https://jkhackathon.github.io/portfolio/development">
           <h3>Development</h3>
           <div class="project-container">
             <p class="project-desc">
@@ -91,22 +103,27 @@
               alt="Recipe web app preview"
             />
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
   <div class="section" id="contact-me">
-    <h1>Contact Me!</h1>
+    <div class="scroll-item">
+      <h1>Contact Me!</h1>
+    </div>
     <div id="contact-container">
-      <a href="https://github.com/JKHackathon">
+      <a href="https://github.com/JKHackathon" class="scroll-item">
         <img src="assets/github.png" alt="github logo" />
         <p><strong>GitHub</strong></p>
       </a>
-      <a href="https://www.linkedin.com/in/joel-kim-65275b22a">
+      <a
+        href="https://www.linkedin.com/in/joel-kim-65275b22a"
+        class="scroll-item"
+      >
         <img src="assets/linkedin.webp" alt="linkedin logo" />
         <p><strong>Linkedin</strong></p>
       </a>
-      <a href="mailto:penguinkim21@gmail.com">
+      <a href="mailto:penguinkim21@gmail.com" class="scroll-item">
         <img
           src="assets/mail-icon-in-flat-style-email-symbol-vector-28061204.jpg"
           alt="mail icon"
