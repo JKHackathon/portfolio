@@ -7,6 +7,7 @@ html {
 }
 
 #navigation-bar {
+  margin: 2vh;
   position: sticky;
   top: 0px;
   display: flex;
@@ -37,7 +38,7 @@ nav {
 
 .section {
   /* min-height: 200px; */
-  height: 95vh;
+  /* height: 95vh; */
   display: flex;
   justify-content: space-around;
   color: white;
@@ -72,6 +73,7 @@ nav {
   /* background-color: rgb(255, 255, 255);
   color: black; */
   display: block;
+  /* flex-direction: column; */
   padding-top: 8vh;
 }
 
@@ -81,13 +83,34 @@ h3 {
   text-align: center;
 }
 
+#project-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .project {
-  padding: 20px;
+  padding: 5px;
   margin: 10px;
-  max-width: 300px;
+  height: max-content;
+  /* max-width: 45vw; */
   /* opacity: 0; */
   transform: translateY(50px);
   transition: opacity 0.5s, transform 0.5s;
+}
+
+.project:hover h3 {
+  color: #36ffff;
+}
+
+.project:hover {
+  box-shadow: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .project.active {
@@ -97,8 +120,11 @@ h3 {
 
 .project-container {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  /* height: 250px; */
+  overflow: hidden;
+  /* width: 300px;
+  height: 200px; */
 }
 
 .project-img {
@@ -119,18 +145,19 @@ h3 {
   clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
 }
 
-.project:hover {
-  box-shadow: white;
-}
-
 #contact-me {
   display: block;
   height: 25vh;
+  margin-top: 10vh;
 }
 
 #contact-container {
   display: flex;
   justify-content: center;
+}
+
+#contact-container a:hover {
+  color: #36ffff;
 }
 
 #contact-container img {
@@ -140,4 +167,10 @@ h3 {
   border-radius: 50%;
   margin-left: 5vw;
   margin-right: 5vw;
+}
+
+#contact-container a {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: center;
 }

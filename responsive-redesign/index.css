@@ -31,6 +31,15 @@ p {
   font-size: large;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover h3 {
+    color: #36ffff;
+}
+
 /* .container {
   height: 200vh;
 }
