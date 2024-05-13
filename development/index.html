@@ -23,7 +23,7 @@
     <a href="#"><nav class="navigation-text">Resume</nav></a>
   </div> -->
   <div class="section">
-    <div class="scroll-items">
+    <div>
       <h1>Development</h1>
       <p>
         As a front-end developer, you often notice little features or behaviors
@@ -35,7 +35,7 @@
     </div>
   </div>
   <div class="section">
-    <div class="scroll-items">
+    <div>
       <h2>The Hunger to Find Good Features</h2>
       <p>
         This specific project focused on creating an aggregator of sorts that
@@ -56,100 +56,96 @@
       </p>
     </div>
   </div>
-  <div class="section">
-    <div class="scroll-item">
-      <p>
-        Now for what we can improve. The title of the article reads almost like
-        normal text as it is just slightly larger, while the subheaders are at
-        least bolded, though the size should clearly separate them as well.
-        There is also little distinction between the image captions and the main
-        body. Strangely, despite the font choice being legible, the actual
-        readability is not great, perhaps due to its light weight. Since
-        grouping is primarily established through borders and dividers, the
-        website feels a little old.
-      </p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="scroll-item">
-      <p>
-        There are also some problems that are less apparent. A number of images
-        are missing alternative text, which allows for screen readers to
-        describe what an image looks like. The links on the sidebar, such as in
-        the “Watch Video” category, are also confusing for screen readers as the
-        image and text are linked separately, resulting in difficulty navigating
-        and understanding the structure of the webpage. Links in the sidebar
-        also are not obviously clickable as there is no hover effect. Contrast
-        in the navigation bar is also extremely low, making it difficult for
-        even average users.
-      </p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="scroll-item">
-      <p>
-        And of course, the biggest issue: the webpage is completely
-        unresponsive. This means that if you resize your window or use a
-        different device, information will be cut off.
-      </p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="scroll-items">
-      <h2>Whipping Up My Creation</h2>
-      <p>
-        Whenever coming up with a design, I always start with some simple
-        sketches to visualize how changes might look. After settling on a more
-        tame sketch, I created a rudimentary wireframe for different devices
-        that addressed most of the little issues we noticed. I made changes like
-        removing borders between groups, italicizing captions, enlarging and
-        bolding headers, creating cards to hold images and text for the sidebar
-        links.
-      </p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="scroll-item">
-      <p>
-        Sidebars are always a bit of a challenge when it comes to mobile
-        devices, as there are a lot of different options. I opted to move all
-        the sidebar content below the main article as I felt this matched a lot
-        of well-known existing designs. Ultimately, I wanted to maintain the
-        general style of the original webpage as it has a little charm to it,
-        but it needed to feel a little more modern and also have a more clear
-        and consistent layout.
-      </p>
-    </div>
-  </div>
   <div class="section" style="min-height: 600px">
     <div class="scroll-item">
-      <div id="img-container">
-        <img id="img-sketch" src="assets/Final-Sketch.png" />
-        <img id="img-lofi" src="assets/RR-Lofi-Desktop.png" />
-      </div>
+      <p>
+        Each app indicates their saved items differently: Reddit having a
+        separate tab for them, Spotify grouping saved songs in playlists, and
+        EdStem by simply showing a star next to favorited posts. However, unlike
+        the others, Reddit does not actually overtly indicate if a post is
+        saved, requiring you to open up a menu to check its status. This simply
+        indicates that saving posts is not a priority feature to Reddit.
+        Furthermore, Reddit’s section for saved posts does not particularly
+        stand out as it is amid many other categories, as you can see:
+      </p>
+    </div>
+    <div class="scroll-item">
+      <img id="img-sketch" src="assets/reddit-saved-section.png" />
+    </div>
+  </div>
+  <div class="section" style="height: 600px">
+    <div class="scroll-item">
+      <p>
+        Both Spotify and Reddit had a nice feature where an alert banner
+        notified you of your action. Spotify even took it a step further by
+        allowing you to change that action by saving a song to a different
+        playlist. While I am a big fan of quick undo buttons, I didn’t feel it
+        would apply to my application.
+      </p>
+    </div>
+    <div class="scroll-item">
+      <img id="img-sketch" src="assets/spotify.png" />
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <img id="img-sketch" src="assets/reddit-save-post.png" />
+    </div>
+  </div>
+  <div class="section" style="height: 550px">
+    <div class="scroll-item">
+      <p>
+        Edstem’s downside is that its filtering functionality is rather limited
+        in terms of combining filters, which in my experience has often made it
+        difficult to find specific posts.
+      </p>
+    </div>
+    <div class="scroll-item">
+      <img id="img-sketch" src="assets/edstem.png" />
     </div>
   </div>
   <div class="section">
     <div class="scroll-item">
       <p>
-        Once I felt decently satisfied, I moved to a high-fidelity mockup, which
-        would appear more like the finished product with all the colors and
-        styling and logos added in, while still allowing for changes to be
-        quickly made. I created a color palette based on the colors of a
-        penguin, using a very dark blue for the main text and adding a couple of
-        accent colors lacking in the original website, in order to more clearly
-        highlight text. With this color palette and some new fonts in hand, I
-        was ready.
+        Overall, there are many different interesting design choices made by
+        these companies in terms of the features they included and how they
+        would portray them to users. While some served to simplify interactions,
+        others, in my opinion, lacked intentional thought leading to a hindered
+        experience.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <h2>Whipping Up My Creation</h2>
+      <p>
+        After completing my research, it was time to create my recipe app. I
+        decided to create cards for each recipe that included the key
+        information in a relatively straightforward format. All the filtering
+        categories are clearly indicated within this card, with the save button
+        standing out due to its bright color. I chose to store all saved recipes
+        in their own tab as this allowed for a consistent feel whether looking
+        at all recipes or your saved recipes.
+      </p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="scroll-item">
+      <p>
+        Upon saving a recipe, a alert pops up just to make it even more clear to
+        a user that they completed an action. As mentioned previously, I thought
+        of including an “undo” option within the popup, however, I decided
+        against it as the “save” button transitions to an “unsave” button which
+        allows for users to easily change their mind.
       </p>
     </div>
   </div>
   <div class="section" style="min-height: 450px">
     <div class="scroll-item">
-      <h2>Results!</h2>
-      <a href="https://jkhackathon.github.io/cs1300-responsive-redesign/">
+      <a href="https://cs1300-development-h5sk.vercel.app">
         <h3>jkhackathon.github.io/cs1300-responsive-redesign/</h3>
         <img
-          src="assets/results.png"
+          src="assets/development-popup.png"
           style="max-height: 45vh; max-width: 80vw"
         />
       </a>

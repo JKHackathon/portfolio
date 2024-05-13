@@ -65,9 +65,10 @@ a:hover h3 {
 } */
 
 #img-container {
-  min-height: 400px;
+  /* min-height: 400px; */
   max-height: 60vh;
   width: 80vw;
+  max-width: 720px;
   overflow: hidden;
 }
 
